@@ -103,7 +103,7 @@ def proper_print (list,totalLines):
     f.write('drug_name, num_prescriber, total_cost\n')
     i=0
     while i < totalLines:
-        f.write(f'{list[i]['drug_name']},{list[i]['num_prescriber']},{list[i]['total_cost']}\n')
+        f.write('{list[i]['drug_name']},{list[i]['num_prescriber']},{list[i]['total_cost']}\n'.format())
         i+=1
        
 if __name__ == '__main__': main()
