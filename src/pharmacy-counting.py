@@ -5,7 +5,7 @@
 
 
 def main():
-    input_file = open('itcont.txt') #opens the input file
+    input_file = open('../input/itcont.txt') #opens the input file
     
     lines_list=[input_file.readline().strip()] # this is an ordered list of the lines in input line
     
