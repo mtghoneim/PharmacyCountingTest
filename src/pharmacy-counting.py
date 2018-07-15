@@ -5,7 +5,7 @@
 
 
 def main():
-    input_file = open('../input/itcont.txt') #opens the input file
+    input_file = open('./input/itcont.txt') #opens the input file
     
     lines_list=[input_file.readline().strip()] # this is an ordered list of the lines in input line
     
@@ -99,7 +99,7 @@ def sortlist(list,totalLines): # this function takes the summary list and total 
 ########################################################
 #This module prints the output file as required
 def proper_print (list,totalLines):
-    f=open('../output/top_cost_drug.txt','w')
+    f=open('./output/top_cost_drug.txt','w')
     f.write('drug_name, num_prescriber, total_cost\n')
     i=0
     while i < totalLines:
