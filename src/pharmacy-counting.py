@@ -100,7 +100,7 @@ def sortlist(list,totalLines): # this function takes the summary list and total 
 #This module prints the output file as required
 def proper_print (list,totalLines):
     f=open('./output/top_cost_drug.txt','w')
-    f.write('drug_name, num_prescriber, total_cost\n')
+    f.write('drug_name,num_prescriber,total_cost\n')
     i=0
     while i < totalLines:
         f.write("{},{},{}\n".format(list[i]['drug_name'],list[i]['num_prescriber'],list[i]['total_cost']))
