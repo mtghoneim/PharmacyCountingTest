@@ -28,7 +28,7 @@ def main(): # this is the main program
     output_file.write("drug_name,num_prescriber,total_cost\n") # writes first line in output file (key fields)
    
     for line in sorted_output: # moves sorted data from sorted contents to output file
-        output_file.write("{},{},{}\n".format(line['drug_name'],line['num_prescriber'],line['total_cost']))
+        output_file.write("{},{},{}\n".format(line['drug_name'],line['num_prescriber'],round(line['total_cost'])))
 
     output_file.close() # closes output file to free up resources
 
