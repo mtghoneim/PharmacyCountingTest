@@ -2,7 +2,7 @@ from csv import reader # this imports the csv module with the reader method
 
 def main(): # this is the main program
    
-    input_file = open('de_cc_data.txt') # opens the input file
+    input_file = open('./input/itcont.txt') # opens the input file
     output_content=[] # this initializes the output_content list
     drug_names=[] # this would store the list of all drug names processed so far
     Top_line=input_file.readline().strip().split(',') # stores the first line in input file for reference
