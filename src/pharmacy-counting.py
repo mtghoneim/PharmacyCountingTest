@@ -23,7 +23,7 @@ def main(): # this is the main program
             
     sorted_output=sorted(output_content, key= lambda value: (-value['total_cost'],value['drug_name'])) # sorts the output content by total cost (high to low) as primary key and drug name (alphabetically) as secondary key
     
-    output_file= open ('output_trial3.txt', 'w') # opens output file
+    output_file= open ('./output/top_cost_drug.txt', 'w') # opens output file
    
     output_file.write("drug_name,num_prescriber,total_cost\n") # writes first line in output file (key fields)
    
