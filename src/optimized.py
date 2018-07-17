@@ -19,7 +19,7 @@ def main(): # this is the main program
             output_content.append({'drug_name':current_drug_name,'num_prescriber':1,'total_cost':float(line[4])}) # adds new output line for the new drug entry
             drug_names.append(current_drug_name) # adds the drug name to the list of processed drugs
      
-    close (input_file) # closes the input file
+    input_file.close() # closes the input file
             
     sorted_output=sorted(output_content, key= lambda value: (-value['total_cost'],value['drug_name'])) # sorts the output content by total cost (high to low) as primary key and drug name (alphabetically) as secondary key
     
@@ -29,7 +29,7 @@ def main(): # this is the main program
    
     for line in sorted_output: # moves sorted data from sorted contents to output file
         output_file.write(f"{line['drug_name']},{line['num_prescriber']},{line['total_cost']}\n")
-    
-    close (output_file)
+
+    output_file.close() # closes output file to free up resources
 
 if __name__ == '__main__': main() # end of code
